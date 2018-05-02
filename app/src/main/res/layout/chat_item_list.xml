@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:id="@+id/yourMessageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/background_your_messages">
+
+        <TextView
+            android:id="@+id/your_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/your_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_below="@id/your_message"
+            android:textColor="@android:color/white"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/otherPicture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_alignParentStart="true"/>
+
+    <RelativeLayout
+        android:id="@+id/otherMessageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_others_message"
+        android:layout_toEndOf="@+id/otherPicture"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/other_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/other_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/other_name"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/other_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_below="@id/other_message"
+            android:textColor="@android:color/white"
+            android:textSize="8sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

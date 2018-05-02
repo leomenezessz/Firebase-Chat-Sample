@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Firebase Simple Chat</string>
+    <string name="title_activity_chat_room">Chat Room</string>
+    <string name="text_nick_hint">"Enter your name here"</string>
+    <string name="button_hint_enter_chat">Enter Chat</string>
+    <string name="title_activity_chat_list_main">ChaLitActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="dummy_button">Go to Chat List</string>
+    <string name="no_chat_messages">No messages here...</string>
+    <string name="loading_messages">Loading Chat Messages...</string>
+</resources>
